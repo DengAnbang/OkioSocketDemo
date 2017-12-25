@@ -20,5 +20,11 @@ public class MainActivity extends AppCompatActivity {
                 mOkioSocket.send("服务器");
             }
         });
+        mOkioSocket.setOnMessageChange(new OkioSocket.OnMessageCome() {
+            @Override
+            public void onMessageCome(String msg) {
+
+            }
+        })
     }
 }
